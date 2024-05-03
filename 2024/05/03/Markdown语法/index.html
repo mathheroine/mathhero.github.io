@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://c-ssl.duitang.com/uploads/blog/202008/29/20200829063003_1b5ef.jpg">
 <meta property="article:published_time" content="2024-05-03T04:38:25.467Z">
-<meta property="article:modified_time" content="2024-05-03T06:24:54.978Z">
+<meta property="article:modified_time" content="2024-05-03T06:33:13.347Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://c-ssl.duitang.com/uploads/blog/202008/29/20200829063003_1b5ef.jpg">
@@ -192,7 +192,7 @@
 <p>特别地，在markdown文本中插入代码块通常是用4个空格即1个tab缩进，但是要想在列表中插入代码块，则应以8个空格即2个tab缩进(要用3个反引号`分别包裹代码头尾)：</p>
 <ol>
 <li>Open the file.</li>
-<li>Find the following code block on line 21:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>Test<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>Find the following code block on line 21: <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>Test<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 <li>Update.</li>
 </ol>
 <h1 id="代码语法"><a href="#代码语法" class="headerlink" title="代码语法"></a>代码语法</h1><p>如果在单词或短语中某一部分需要表示为代码，则可将其包裹在反引号中：<br>At the command prompt, type <code>nano</code>.</p>
@@ -213,7 +213,7 @@
 <p>这是一个超链接：[Markdown](<a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a> “最好的markdown教程”)</p>
 <p>(但是在obsidian里怎么不显示title啊？？？)</p>
 <p>除了用文本显示超链接，还可以直接以网址形式显示超链接，用尖括号包裹网址或email即可：</p>
-<p>这是一个超链接：<a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br>这是我的邮箱：<a href="mailto:&#49;&#x38;&#51;&#54;&#53;&#52;&#48;&#56;&#56;&#x32;&#x38;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#49;&#x38;&#51;&#54;&#53;&#52;&#48;&#56;&#56;&#x32;&#x38;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>这是一个超链接：<a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br>这是我的邮箱：<a href="mailto:&#x31;&#x38;&#51;&#x36;&#53;&#52;&#x30;&#56;&#56;&#x32;&#56;&#x40;&#x31;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#109;">&#x31;&#x38;&#51;&#x36;&#53;&#52;&#x30;&#56;&#56;&#x32;&#56;&#x40;&#x31;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <p>当然可以在链接中加入markdown格式：</p>
 <p>粗体超链接，即在超链接外包裹双星号： I love supporting the <strong><a target="_blank" rel="noopener" href="https://eff.org/">EFF</a></strong>.</p>
 <p>斜体超链接，在超链接外包裹星号：This is the <em><a target="_blank" rel="noopener" href="https://www.markdownguide.org/">Markdown Guide</a></em>.</p>
@@ -221,8 +221,9 @@
 <p>注意：为了兼容性，如果url中含有空格，请用%20表示空格：<br>例如<a target="_blank" rel="noopener" href="https://www.example.com/my">https://www.example.com/my</a> great page表示为：<br><a target="_blank" rel="noopener" href="https://www.example.com/my%20great%20page">link</a></p>
 <p>下面是markdown中引用型链接的一种用法（但是这里似乎不奏效……）<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/">hobbit-hole</a></p>
 <h1 id="图片语法"><a href="#图片语法" class="headerlink" title="图片语法"></a>图片语法</h1><p>插入图片的方法与超链接类似，需在开头再加个叹号！</p>
-<p>![这是图片](D:\原桌面文件\main\rikka.jpg “title”)</p>
-<p>如果要把这张图片也对应超链接，则将插入图片的语句放入方括号，后面括号接链接：<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/">![这是图片](D:\原桌面文件\main\rikka.jpg “title”)</a><br>当然图片的地址未必是本地路径，也可以是网址<br><img src="https://c-ssl.duitang.com/uploads/blog/202008/29/20200829063003_1b5ef.jpg" alt="image" title="title"></p>
+<p>$\int_0^1 e^xdx$</p>
+<p>如果要把这张图片也对应超链接，则将插入图片的语句放入方括号，后面括号接链接：</p>
+<p>当然图片的地址未必是本地路径，也可以是网址<br><img src="https://c-ssl.duitang.com/uploads/blog/202008/29/20200829063003_1b5ef.jpg" alt="image" title="title"></p>
 <p>太棒了！嘿嘿</p>
 <h1 id="转义字符语法"><a href="#转义字符语法" class="headerlink" title="转义字符语法"></a>转义字符语法</h1><p>许多字符是用于格式化markdown文档的，如果要输出它们本身，则应添加反斜杠字符backslash</p>
 <p>* 没有反斜杠的话，将变成无序列表</p>
@@ -315,8 +316,8 @@
 <li>将表情符号复制粘贴至markdown文档</li>
 <li>键入emoji表情shortcodes（用冒号包裹）</li>
 </ol>
-<p>去露营了 :tent: 很快回来</p>
-<p>真好笑 :joy: </p>
+<p>去露营了 : 很快回来</p>
+<p>真好笑 : </p>
 <p>呃怎么在obsidian里不显示……</p>
 <h1 id="自动网址链接"><a href="#自动网址链接" class="headerlink" title="自动网址链接"></a>自动网址链接</h1><p>在许多markdown处理器中，例如obsidian，会将url自动转化为链接，即使不使用方括号，也会处理为链接：</p>
 <p><a target="_blank" rel="noopener" href="http://www.example.com/">www.example.com</a></p>
